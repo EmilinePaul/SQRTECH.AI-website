@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - SQRTech.ai</title>
+  <style>
+    body { font-family: 'Roboto', sans-serif; background-color: #ebf4f9; color: #004aad; margin:0; padding:0;}
+    nav { background-color: #aecdac; padding: 1em; display: flex; gap: 1em; }
+    nav a { color: #004aad; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 2em; }
+    h1 { font-family: 'Neo Tech', sans-serif; }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    label {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-top: 0.5em;
+      padding: 0.5em;
+      border: 1px solid #bdccea;
+      border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+    }
+    button {
+      margin-top: 1.5em;
+      background-color: #38b6ff;
+      color: white;
+      border: none;
+      padding: 0.75em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #004aad;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+</body>
+</html>
